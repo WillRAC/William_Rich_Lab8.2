@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         else if (id == R.id.action_item2) {
             message = "You clicked item 2";
         }
-        finish();
 
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
         return true;

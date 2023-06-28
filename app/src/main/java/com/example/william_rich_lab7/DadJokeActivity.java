@@ -54,7 +54,6 @@ public class DadJokeActivity extends AppCompatActivity implements NavigationView
      else if (id == R.id.action_item2) {
             message = "You clicked item 2";
         }
-        finish();
 
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
         return true;
