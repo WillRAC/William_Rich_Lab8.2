@@ -46,17 +46,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        String message = null;
         int id = item.getItemId();
+        String message = null;
 
-        switch (id) {
-            case R.id.action_item1:
-                message = "You clicked item 1";
-                break;
-            case R.id.action_item2:
-                message = "You clicked item 1";
-                break;
+        if (id == R.id.action_item1){
+            message = "You clicked item 1";
         }
+        else if (id == R.id.action_item2) {
+            message = "You clicked item 1";
+        }
+        finish();
+
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
         return true;
 

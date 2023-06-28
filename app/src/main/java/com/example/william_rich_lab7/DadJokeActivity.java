@@ -1,6 +1,5 @@
 package com.example.william_rich_lab7;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -46,17 +45,17 @@ public class DadJokeActivity extends AppCompatActivity implements NavigationView
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        String message = null;
         int id = item.getItemId();
+        String message = null;
 
-        switch (id) {
-            case R.id.action_item1:
-                message = "You clicked item 1";
-                break;
-            case R.id.action_item2:
-                message = "You clicked item 2";
-                break;
+        if (id == R.id.action_item1){
+            message = "You clicked item 1";
         }
+     else if (id == R.id.action_item2) {
+            message = "You clicked item 1";
+        }
+        finish();
+
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
         return true;
 
