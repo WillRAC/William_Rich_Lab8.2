@@ -17,8 +17,6 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private DrawerLayout drawerLayout;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar tBar = findViewById(R.id.my_toolbar);
         setSupportActionBar(tBar);
 
-        drawerLayout = findViewById(R.id.drawer_layout);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,
@@ -74,8 +71,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
 
         } else if (id == R.id.op_dadJoke) {
-        Intent intent = new Intent(MainActivity.this, DadJokeActivity.class);
-        startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, DadJokeActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.op_exit) {
 
@@ -83,16 +80,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         }
 
-        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
     }
 }
