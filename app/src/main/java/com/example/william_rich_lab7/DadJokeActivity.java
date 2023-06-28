@@ -66,7 +66,6 @@ public class DadJokeActivity extends AppCompatActivity implements NavigationView
 
         if (id == R.id.op_home) {
             Intent intent = new Intent(DadJokeActivity.this, MainActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
 
         } else if (id == R.id.op_dadJoke) {
