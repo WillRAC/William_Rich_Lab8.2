@@ -11,7 +11,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"/>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
@@ -23,7 +23,7 @@
     <TextView
         android:id="@+id/text_dad_joke"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_centerInParent="true"
         android:textSize="24sp"
         android:gravity="bottom"
