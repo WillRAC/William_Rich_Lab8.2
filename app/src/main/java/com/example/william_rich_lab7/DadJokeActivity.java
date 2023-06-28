@@ -19,7 +19,7 @@ public class DadJokeActivity extends AppCompatActivity implements NavigationView
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.dad_joke);
 
         Toolbar tBar = findViewById(R.id.my_toolbar);
         setSupportActionBar(tBar);
