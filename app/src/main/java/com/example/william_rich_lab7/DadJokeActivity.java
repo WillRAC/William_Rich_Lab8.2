@@ -52,7 +52,7 @@ public class DadJokeActivity extends AppCompatActivity implements NavigationView
             message = "You clicked item 1";
         }
      else if (id == R.id.action_item2) {
-            message = "You clicked item 1";
+            message = "You clicked item 2";
         }
         finish();
 
