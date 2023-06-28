@@ -74,7 +74,7 @@ public class DadJokeActivity extends AppCompatActivity implements NavigationView
 
         } else if (id == R.id.op_exit) {
 
-            finish();
+            System.exit(0);
 
         }
 
